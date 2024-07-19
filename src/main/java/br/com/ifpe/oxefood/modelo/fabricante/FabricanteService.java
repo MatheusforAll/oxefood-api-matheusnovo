@@ -14,6 +14,8 @@ public class FabricanteService {
    @Autowired
    private FabricanteRepository repository;
 
+  
+
    @Transactional
    public Fabricante save(Fabricante fabricante) {
 
@@ -23,6 +25,8 @@ public class FabricanteService {
        return repository.save(fabricante);
    }
 
+
+ 
    public List<Fabricante> listarTodos() {
   
     return repository.findAll();
